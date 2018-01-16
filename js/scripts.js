@@ -16,6 +16,11 @@ $(document).ready(function(){
     $("ul#results").append("<li>" + array2[1] + "</li>");
     $("ul#results").append("<li>" + array2[2] + "</li>");
 
+    var flavors = ["Chocolate", "Vanilla", "Strawberry", "Pistachio", "Rocky Road"];
+    flavors.forEach(function(flavor){
+      $("ul#results").append("<li>" + flavor + "</li>")
+    })
+
     event.preventDefault();
   });
 });
